@@ -24,9 +24,9 @@
       }
     ]
   },
-  "level": 78,
-  "exp": 7217,
-  "nextExp": 7216,
+  "level": 83,
+  "exp": 8382,
+  "nextExp": 8381,
   "iconfont": "https://at.alicdn.com/t/c/font_4336463_0i6ly0yvyzb.js",
   "dock": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "name": "Waddle编辑器",
-      "href": "https://waddle.coco-central.cn/",
+      "href": "https://waddle.cocotais.cn/",
       "imgSrc": "/img/waddle2.png"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "name": "Boxy编辑器",
-      "href": "https://boxy.coco-central.cn/",
+      "href": "https://boxy.cocotais.cn/",
       "imgSrc": "/img/boxy.png"
     }
   ],
