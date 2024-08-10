@@ -58,14 +58,12 @@ import hina_swimsuit from '/l2d/hina_swimsuit/CH0063_home.skel?url'
 import hina_bgm from '/l2d/hina_swimsuit/Theme_21.mp3'
 import aris from '/l2d/aris/Aris_home.skel?url'
 import aris_bgm from '/l2d/aris/Someday_-sometime.mp3'
-import mika from '/l2d/mika/CH0069_home.skel?url'
-import mika_bgm from '/l2d/mika/Daily-Routine-247.mp3'
 /*
  * students 是学生l2d的位置
  * l2dBGM 是学生背景音乐的位置
  * */
-const students = [hina_swimsuit, aris, mika]
-const l2dBGM = [hina_bgm, aris_bgm, mika_bgm]
+const students = [hina_swimsuit, aris]
+const l2dBGM = [hina_bgm, aris_bgm]
 /*——————————————————————————————————————————————————*/
 export let studentsL2D = []
 export let bgmName = []
