@@ -13,7 +13,17 @@ import config from './_config.json'
 export default defineConfig({
   build: {
     assetsInlineLimit: 0,
-    minify: 'esbuild'
+    minify: 'esbuild',
+    chunkSizeWarningLimit: 500,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            return id.toString().split('node_modules/')[1].split('/')[0].toString();
+          }
+        }
+      }
+    }
   },
   plugins: [
     vue(),
@@ -35,14 +45,14 @@ export default defineConfig({
         interlaced: false
       },
       optipng: {
-        optimizationLevel: 7
+        optimizationLevel: 3
       },
       mozjpeg: {
         quality: 50
       },
       pngquant: {
         quality: [0.9, 1],
-        speed: 8
+        speed: 4,
       },
       svgo: {
         plugins: [
