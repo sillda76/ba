@@ -1,14 +1,14 @@
 <h1 align="center">小鱼档案</h1>
 
 <p align="center">
-<a href='https://gitee.com/sf-yuzifu/homepage/stargazers'><img src='https://gitee.com/sf-yuzifu/homepage/badge/star.svg?theme=dark' alt='star' /></a>
-<a href='https://github.com/sf-yuzifu/homepage/stargazers'><img alt="GitHub stars" src="https://img.shields.io/github/stars/sf-yuzifu/homepage?style=social" /></a>
+  <a href='https://gitee.com/sf-yuzifu/homepage/stargazers'><img src='https://gitee.com/sf-yuzifu/homepage/badge/star.svg?theme=dark' alt='star' /></a>
+  <a href='https://github.com/sf-yuzifu/homepage/stargazers'><img alt="GitHub stars" src="https://img.shields.io/github/stars/sf-yuzifu/homepage?style=social" /></a>
 </p>
 
 <div align="center">有关小鱼的《蔚蓝档案》风格的个人主页</div>
 
 <p align="center">
-<img src='shots/main.png' alt='小鱼档案' />
+  <img src='shots/main.png' alt='小鱼档案' />
 </p>
 
 ## 预览链接
@@ -28,19 +28,20 @@
 - [x] 学生回忆大厅全局观赏
 - [ ] 学生互动
 
-## 技术栈
+## 使用到的项目
 
 - [Vue](https://cn.vuejs.org/)
 - [Vite](https://vitejs.cn/vite3-cn/)
 - [Arco Design](https://arco.design/)
 - [pixi-spine](https://github.com/pixijs/spine)
 - [Iconfont](https://www.iconfont.cn/)
+- [cn-font-split](https://github.com/KonghaYao/cn-font-split)
 
 ## 部署方式
 
 > **推荐环境：**
 >
-> node > 16.16.0  
+> node > 18.0.0  
 > npm > 8.15.0
 
 1. 安装yarn
@@ -67,7 +68,7 @@ yarn build
 yarn preview
 ```
 
-> 构建完成后，静态资源会在 **`dist` 目录** 中生成，你可以将 **`dist` 目录中的文件**上传至服务器，也可以使用 `Vercel`、`Netlify` 等静态托管平台一键导入并自动部署
+> 构建完成后，静态资源会在 **`dist` 目录** 中生成，你可以将 **`dist` 目录中的文件**上传至服务器（如宝塔面板部署静态页面），也可以使用 `Vercel`、`Netlify` 等静态托管平台一键导入并自动部署
 
 ## 个性化
 
