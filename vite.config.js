@@ -8,6 +8,7 @@ import viteImagemin from 'vite-plugin-imagemin'
 import { VitePWA } from 'vite-plugin-pwa'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import config from './_config.json'
+import Font from 'vite-plugin-font'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -28,6 +29,11 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
+    Font.vite({
+      css: {
+        fontFamily: 'BlueakaBeta2GBK'
+      }
+    }),
     createHtmlPlugin({
       inject: {
         data: {

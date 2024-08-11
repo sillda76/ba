@@ -19,6 +19,7 @@
     "pixi-spine": "^4.0.4",
     "pixi.js": "^7.3.2",
     "rollup-plugin-copy": "^3.5.0",
+    "vite-plugin-font": "^2.1.5",
     "vite-plugin-pwa": "^0.16.5",
     "vue": "^3.3.4",
     "vue-i18n": "^9.4.1",
