@@ -6,15 +6,11 @@ import { sound } from '@pixi/sound'
 
 const props = defineProps(['l2dOnly'])
 
-const scale = 2.8
-
-let url,
-  animation,
-  id = 0
+let animation, id = 0
 
 const l2d = new PIXI.Application({
-  width: 1000 * scale,
-  height: 720 * scale,
+  width: 2560,
+  height: 1440,
   backgroundAlpha: 0
 })
 
@@ -36,12 +32,12 @@ const setL2D = (num) => {
   animation = new Spine(studentsL2D[id].spineData)
   l2d.stage.addChild(animation)
   if (animation.state.hasAnimation('Idle_01')) {
-    animation.scale.set(0.3 * scale)
+    animation.scale.set(.85)
     animation.state.setAnimation(0, 'Idle_01', true)
     animation.state.timeScale = 1
     animation.autoUpdate = true
-    animation.y = (((2568 + 1600) * 0.3) / 2) * scale
-    animation.x = ((3462 * 0.3) / 2) * scale
+    animation.y = 1440
+    animation.x = 2560 / 2
   }
   sound.play(bgmName[id])
 }
