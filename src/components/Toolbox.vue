@@ -172,6 +172,7 @@ setInterval(() => {
   position: absolute;
   right: 0;
   top: 76px;
+  overflow: hidden;
 }
 
 .toolbox.l2d img {
