@@ -39,6 +39,18 @@
 
 ## 部署方式
 
+### 使用第三方部署平台
+
+#### 1. Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/sf-yuzifu/homepage)
+
+#### 2. Netlify
+1. `Fork`[本项目](https://github.com/sf-yuzifu/homepage)
+2. [登录 Netlify 控制台](https://app.netlify.com )，选择`Add new site`-`Import an exist project`添加网站
+3. 接着选择 GitHub 认证来读取我们的 GitHub 项目列表。在列表中搜索我们刚才`Fork`生成的仓库名，点击该项目开始基于该仓库创建我们的 Netlify 网站
+
+### 本地构建网页文件
+
 > **推荐环境：**
 >
 > node > 18.0.0  
@@ -64,11 +76,13 @@ yarn dev
 # 构建
 yarn build
 
-# 预览（生产环境）
+# 预览（生产环境预览）
 yarn preview
 ```
 
-> 构建完成后，静态资源会在 **`dist` 目录** 中生成，你可以将 **`dist` 目录中的文件**上传至服务器（如宝塔面板部署静态页面），也可以使用 `Vercel`、`Netlify` 等静态托管平台一键导入并自动部署
+> 构建完成后，静态资源会在 **`dist` 目录** 中生成，你可以将 **`dist` 目录中的文件**上传至服务器
+
+> 其中关于宝塔如何部署的（https://cloud.tencent.com/developer/article/1977167）
 
 ## 个性化
 
@@ -129,8 +143,9 @@ yarn preview
   }
 }
 ```
+> 修改其中相关内容，之后重新按上述方式部署即可完成修改
 
 ## 有关学生回忆大厅L2D文件获取
 
-1. 自己去解包（[教程1](https://www.bilibili.com/read/cv15934670/)、[教程2](https://www.bilibili.com/read/cv18073492/)）
-2. 去[基沃托斯古书馆](https://kivo.wiki/)中的“角色图鉴”——“切换到鉴赏模式”——“回忆大厅”当中自行获取
+1. 自己去游戏解包中获取（[教程1](https://www.bilibili.com/read/cv15934670/)、[教程2](https://www.bilibili.com/read/cv18073492/)）
+2. 去[基沃托斯古书馆](https://kivo.fun/)中的`角色图鉴`—`切换到鉴赏模式`—`回忆大厅`当中自行抓包获取
